@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "963029340588",
+    "project_id": "alphaver-538d8",
+    "storage_bucket": "alphaver-538d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963029340588:android:076a9d1fe336934810ea09",
+        "android_client_info": {
+          "package_name": "com.example.alphaver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963029340588-khgbl12s3s06tkl32mrklavf65md7m17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATKr1EzGttHd5MZhNssDVmNwRX4D6DhLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963029340588-khgbl12s3s06tkl32mrklavf65md7m17.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
