@@ -1,5 +1,7 @@
 package com.example.alphaver;
 
+import static com.example.alphaver.Variable.emailVer;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -58,13 +60,14 @@ public class LoginActivity extends AppCompatActivity {
         boolean toSkip = settings.getBoolean("stayConnect",false);
         FirebaseUser user = mAuth.getCurrentUser();
         if (toSkip && user != null){
+            Variable.setEmailVer(emailET.getText().toString());
             Intent si = new Intent(this, MainActivity.class);
-            si.putExtra("email", user.getEmail());
             startActivity(si);
             finish();
         }
     }
 
+    // When the checkBox is clicked
     public void changeConnection(View view) {
         SharedPreferences settings = getSharedPreferences("Status",MODE_PRIVATE);
         SharedPreferences.Editor editor = settings.edit();
@@ -72,6 +75,7 @@ public class LoginActivity extends AppCompatActivity {
         editor.apply();
     }
 
+    // When the button is clicked
     public void login(View view) {
         if (needToSignUp){
             signUp();
@@ -100,7 +104,11 @@ public class LoginActivity extends AppCompatActivity {
                     if (task.isSuccessful()){
                         Toast.makeText(LoginActivity.this, "Sign up is done successfully", Toast.LENGTH_SHORT).show();
                         Intent si = new Intent(LoginActivity.this, MainActivity.class);
-                        si.putExtra("email", tempUser.getEmail());
+                        Variable.setEmailVer(tempUser.getEmail());
+                        SharedPreferences settings = getSharedPreferences("Status",MODE_PRIVATE);
+                        SharedPreferences.Editor editor = settings.edit();
+                        editor.putString("email", Variable.getEmailVer());
+                        editor.apply();
                         startActivity(si);
                     }
                     else {
@@ -129,7 +137,11 @@ public class LoginActivity extends AppCompatActivity {
                     if (task.isSuccessful()){
                         Toast.makeText(LoginActivity.this, "Sign-In is done successfully", Toast.LENGTH_SHORT).show();
                         Intent si = new Intent(LoginActivity.this, MainActivity.class);
-                        si.putExtra("email", email);
+                        Variable.setEmailVer(email);
+                        SharedPreferences settings = getSharedPreferences("Status",MODE_PRIVATE);
+                        SharedPreferences.Editor editor = settings.edit();
+                        editor.putString("email", Variable.getEmailVer());
+                        editor.apply();
                         startActivity(si);
                     }
                     else{

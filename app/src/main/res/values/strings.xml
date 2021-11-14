@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AlphaVer</string>
+    <string-array name="pdf_summary">
+        <item> user name </item>
+        <item> user email </item>
+    </string-array>
 </resources>

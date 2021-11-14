@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".pdfCreatorActivity">
 
     <Space
         android:layout_width="0px"
         android:layout_height="match_parent"
-        android:layout_weight="10" />
+        android:layout_weight="5" />
 
     <LinearLayout
         android:layout_width="0px"
         android:layout_height="match_parent"
-        android:layout_weight="80"
+        android:layout_weight="90"
         android:orientation="vertical">
 
         <Space
@@ -22,51 +22,10 @@
             android:layout_height="0px"
             android:layout_weight="5" />
 
-        <TextView
-            android:id="@+id/userState"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            android:textAlignment="viewStart"
-            android:textSize="16sp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="2" />
-
-        <EditText
-            android:id="@+id/eventTitleET"
-            android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="2"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Event Title" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="2" />
-
-        <EditText
-            android:id="@+id/inventorET"
-            android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="2"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Inventor" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="2" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="4"
+            android:layout_weight="7"
             android:orientation="horizontal">
 
             <Space
@@ -78,14 +37,26 @@
                 android:layout_width="0px"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:onClick="createEvent"
-                android:text="create event" />
+                android:onClick="getContent"
+                android:text="create PDF" />
 
             <Space
                 android:layout_width="0px"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
+
         </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="3" />
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="75" />
 
         <Space
             android:layout_width="match_parent"
@@ -96,5 +67,5 @@
     <Space
         android:layout_width="0px"
         android:layout_height="match_parent"
-        android:layout_weight="10" />
+        android:layout_weight="5" />
 </LinearLayout>

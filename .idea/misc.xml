@@ -3,11 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProj/AlphaVer/app/src/main/res/layout/activity_location.xml" value="0.2" />
         <entry key="..\:/AndroidProj/AlphaVer/app/src/main/res/layout/activity_login.xml" value="0.2" />
-        <entry key="..\:/AndroidProj/AlphaVer/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/AndroidProj/AlphaVer/app/src/main/res/layout/activity_record.xml" value="0.18" />
+        <entry key="..\:/AndroidProj/AlphaVer/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/AndroidProj/AlphaVer/app/src/main/res/layout/activity_pdf_creator.xml" value="0.22" />
+        <entry key="..\:/AndroidProj/AlphaVer/app/src/main/res/layout/activity_record.xml" value="0.22" />
+        <entry key="..\:/AndroidProj/AlphaVer/app/src/main/res/layout/pickdate.xml" value="0.13405797101449277" />
+        <entry key="..\:/AndroidProj/AlphaVer/app/src/main/res/menu/main.xml" value="0.25" />
         <entry key="..\:/AndroidProj/AlphaVer/app/src/main/res/menu/main_activity_actions.xml" value="0.1" />
+        <entry key="..\:/AndroidProj/AlphaVer/app/src/main/res/menu/tool_bar.xml" value="0.1921875" />
         <entry key="..\:/AndroidProj/AlphaVer/app/src/main/res/menu/toolbarmenu.xml" value="0.1921875" />
+        <entry key="..\:/AndroidProj/AlphaVer/app/src/main/res/xml/provider_paths.xml" value="0.1921875" />
       </map>
     </option>
   </component>
